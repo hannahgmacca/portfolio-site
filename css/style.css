@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* profile section */
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#profile img {
+    width: 50%;
+    margin: 0% 25%;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+#profile p {
+    margin: 20px;
+    color: grey;
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: justify;
+}
 /*responsive media queries*/
 /* For mobile phones: */
 [class*="col-"] {
@@ -24,8 +51,12 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+    #profile p {font-size: 1.7em}
+    #profile img {width: 40%; margin: 0 30%}
+    .title{font-size: 2.5m;}
+
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -39,4 +70,6 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .container{margin: 8px 150px;}
+    #profile p{font-size: 1.2em}
   }
